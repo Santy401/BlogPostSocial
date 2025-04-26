@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+main {
+    margin: 0 15%;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li,
+a {
+    list-style: none;
+    margin: 0 6px;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 300;
+}
+
+.Logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #f1f1f1;
+    letter-spacing: 1.2px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(85, 85, 238, 0.611);
+    padding: 5px;
+    border-radius: 4px;
+    animation: App-logo-spin alternate 500ms ease-in-out;
+}
+
+@keyframes App-logo-spin {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+
+}
+
+.promotion {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion h1 {
+    font-size: 3rem;
+    color: #1c1c1c;
+    letter-spacing: 1.2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.promotion p {
+    font-size: 1.5rem;
+    color: #1c1c1c;
+    letter-spacing: 1.2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.promotion button {
+    font-size: 1.5rem;
+    color: #1c1c1c;
+    letter-spacing: 1.2px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgba(85, 85, 238, 0.611);
+    transition: all 300ms ease-in-out;
+}
+
+.promotion button:hover {
+    background-color: rgba(85, 85, 238, 0.611);
+    scale: 1.1;
+} 
+
+.author {
+    display: flex;
+    text-align: center;
+    position: relative;
+    align-items: center;
+}
+
+.author p {
+    position: relative;
+    bottom: 0;
+    top: 10px;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    color: #1c1c1c;
+    letter-spacing: 1.2px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.author h2 {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: #1c1c1c;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.post {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: rgba(251, 251, 251, 0.787);
+    color: #1c1c1c;
+    letter-spacing: 1.2px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    border: 1px solid rgba(122, 122, 122, 0.25);
+    width: 50%;
+}
+
+.imgPost {
+    width: 50%;
+    color: #55e;
+    height: 300px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category {
+    color: rgba(110, 110, 110, 0.878);
+    cursor: pointer;
+}
+
+.postText {
+    color: #1c1c1c;
+    letter-spacing: 1.2px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.authorInfo {
+    display: flex;
+    align-items: center;
+}
+
+.authorInfo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .promotion {
+        height: 50vh;
+    }
+
+    .promotion h1 {
+        font-size: 2rem;
+    }
+
+    .promotion p {
+        font-size: 1rem;
+    }
+
+    .promotion button {
+        font-size: 1rem;
+    }
+
+    .post {
+        width: 100%;
+        transform: translateX(-30px);
+    }
+
+    .imgPost {
+        width: 100%;
+    }
+
+    .postText {
+        font-size: 1rem;
+    }
+
+    .author h2 {
+        font-size: 1rem;
+    }
+
+    .author p {
+        font-size: .7rem;
+    }
+
+    .authorInfo img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .categories {
+        display: none;
+    }
+}
